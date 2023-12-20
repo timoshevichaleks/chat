@@ -63,7 +63,7 @@ class _AuthScreen extends State<AuthScreen> {
             .collection('users')
             .doc(userCredentials.user!.uid)
             .set({
-          'username': 'to be done...',
+          'username': _enteredUserName,
           'email': _enteredEmail,
           'image_url': imageUrl,
         });
